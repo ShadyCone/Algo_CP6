@@ -1,0 +1,17 @@
+print ("CP6")
+  
+array = [1, 2, 3, 0, 4, 5, 2, 7]
+delta = 2
+counter = 0
+
+min = array[0]
+for i in range(len(array)):
+    if array[i] <= min:
+        min = array[i]
+
+for i in array:
+    if min + delta == i:
+        counter += 1
+
+print("counter=", counter)
+  
